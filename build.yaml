@@ -1,4 +1,4 @@
-name: Eyelash Sofle (self-contained, Option B)
+name: Eyelash Sofle
 
 # The Actions workflow reads this file; no need to touch .github/workflows/build.yml
 zmk_config: config

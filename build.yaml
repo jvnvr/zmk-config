@@ -19,10 +19,9 @@
 #
 #---
 include:
-  - board: eyelash_sofle
+  - board: eyelash_sofle_left
     shield: sofle_left
     artifact-name: sofle_oem_left
-
-  - board: eyelash_sofle
+  - board: eyelash_sofle_right
     shield: sofle_right
     artifact-name: sofle_oem_right

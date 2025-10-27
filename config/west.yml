@@ -4,13 +4,18 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: jvnvr
+      url-base: https://github.com/jvnvr
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
+     # ZMK itself (brings Zephyr and deps via the imported manifest)
     - name: zmk
       remote: zmkfirmware
+      revision: main
       import: app/west.yml
-    # ⬇️ add your board repo as a Zephyr module
+
+    # Your keyboard as a Zephyr module so West/Zephyr can discover the board
     - name: zmk-sofle-oem
       remote: jvnvr
       revision: main
